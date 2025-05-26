@@ -1,0 +1,15 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.main_heading {
+  font-weight: 600;
+  color: var(--color-primary);
+  padding: 0px 32px;
+}
+
+.sub_headings {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text);
+}

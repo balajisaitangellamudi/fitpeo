@@ -1,0 +1,103 @@
+.header_container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  width: -webkit-fill-available;
+  max-width: 1440px;
+  height: 135px;
+  z-index: 15;
+}
+
+/* input box  */
+.input_container {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid #e5e6e8;
+  padding: 0px 12px;
+  border-radius: 8px;
+  height: 48px;
+}
+
+/* Input field resets */
+.input_container input {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* search and notification icons */
+.search_inputs_icons {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Base nav icon container */
+.nav_icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  border-radius: 25%;
+  list-style-type: none;
+  position: relative;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.nav_image_container {
+  padding: 0;
+}
+
+/* For profile */
+.nav_profile_img {
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 25%;
+  object-fit: cover;
+}
+
+/* Icon styles  */
+.nav_icon {
+  font-size: 20px;
+  color: #fff !important;
+}
+
+.main_container {
+  max-width: 1440px;
+}
+
+.nav_menu {
+  display: none;
+}
+
+/* Secondary section background color */
+.header_section_2 {
+  background-color: var(--color-secondary);
+}
+
+/* Responsive styles for tablets and below */
+@media screen and (max-width: 1200px) {
+  /* Hide search input */
+  .input_container {
+    display: none;
+  }
+
+  .header_container {
+    padding: 24px;
+    height: unset;
+  }
+
+  .nav_menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  .header_section_2 {
+    background-color: #fff;
+  }
+}

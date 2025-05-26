@@ -1,0 +1,84 @@
+.aside {
+  position: fixed;
+  width: 260px;
+  /* color: var(--color-secondary); */
+  background-color: var(--color-secondary);
+  height: 100%;
+  z-index: 10;
+}
+
+/* logo primary color */
+.logo_primary {
+  color: var(--color-logo);
+}
+.logo_secondary {
+  color: var(--color-primary);
+  color: #1c154b;
+}
+
+.section-title {
+  text-transform: capitalize;
+  padding: 10px 36px;
+}
+
+.nav_sub_headings {
+  display: flex;
+  align-items: center;
+  padding: 10px 36px;
+}
+.nav_active {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav_active svg {
+  color: var(--color-primary);
+}
+
+.nav_pending {
+  color: #404457;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav_links {
+  color: #abacb3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav_links:hover {
+  color: var(--color-primary);
+}
+
+.nav_links:hover svg {
+  color: var(--color-primary);
+}
+
+/* Back icon styling */
+.back_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate the back icon when sidebar is open */
+.toggle_icon {
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate_icon {
+  transform: rotate(-180deg);
+}
+
+.main_title {
+  padding: 48px 36px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
