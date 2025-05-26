@@ -18,4 +18,5 @@ export default defineConfig({
       },
     }),
   ],
+  base: "/fit_peo_health_care",
 });
